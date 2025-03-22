@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProjectEon.css'
+import PageLayout from '../layout/PageLayout'
 
 const ProjectEon = () => {
   return (

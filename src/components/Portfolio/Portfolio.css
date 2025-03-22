@@ -1,3 +1,5 @@
+@import url("../../base.css");
+
 .portfolio{
     display: flex;
     flex-direction: column;
@@ -33,7 +35,7 @@
 
 .portfolio-container img:hover{
     transform: scale(1.10);
-    border: 4px solid #FF00FF;
+    border: 4px solid var(--main_color);
     border-radius: 10px;
     transition: 0.3s;
 }

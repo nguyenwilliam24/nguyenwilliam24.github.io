@@ -26,7 +26,7 @@ const Portfolio = () => {
                 }
             )}
         </div>
-        <div className="portfolio-showmore" onClick={()=>navigate(Projects)}>
+        <div className="portfolio-showmore" onClick={()=>{navigate(Projects); window.scrollTo(0,0)}}>
           <p>Show More</p>
           <img src={arrow_icon} alt="Arrow"/>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Ivorfall.css'
+import PageLayout from '../layout/PageLayout'
 
 const Ivorfall = () => {
   return (

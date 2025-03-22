@@ -2,19 +2,19 @@ import React from 'react'
 import './Projects.css'
 import projects_data from '../assets/projects_data'
 import { useNavigate } from 'react-router-dom'
+import PageLayout from '../layout/PageLayout'
 
 const Projects = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="projects">
-      <h1>Projects</h1>
+    <PageLayout title="Projects">
       <div className="projects-container">
-            {projects_data.map(
-                (project,index)=>{return <img key={index} onClick={()=>navigate(project.p_path)} src={project.p_image} alt=""/>}
-            )}
-        </div>
-    </div>
+        {projects_data.map(
+            (project,index)=>{return <img key={index} onClick={()=>navigate(project.p_path)} src={project.p_image} alt=""/>}
+        )}
+      </div>
+    </PageLayout>
   )
 }
 

@@ -1,3 +1,5 @@
+@import url("../../base.css");
+
 .about{
     display: flex;
     flex-direction: column;
@@ -22,9 +24,9 @@
     gap: 80px;
 }
 
-.about-left{
+/* .about-left{
 
-}
+} */
 
 .about-right{
     display: flex;
@@ -70,7 +72,7 @@
     width: 50%;
     height: 8px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    background: linear-gradient(264deg, var(--alt_color) -5.09%, var(--main_color) 106.28%);
 }
 
 @media(max-width:768px){

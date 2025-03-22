@@ -6,12 +6,9 @@ import Resume from './pages/Resume'
 
 import ProjectsLayout from './layout/ProjectsLayout'
 import Projects from './pages/Projects'
-import ProjectEon from './pages/ProjectEon'
-import Ivorfall from './pages/Ivorfall'
-import Goom from './pages/Goom'
+import Project from './components/Project/Project'
 
 const App = () => {
-
   const Router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout/>}>
@@ -20,9 +17,7 @@ const App = () => {
 
         <Route path="projects" element={<ProjectsLayout/>}>
           <Route index element={<Projects/>}/>
-          <Route path="projecteon" element={<ProjectEon/>}/>
-          <Route path="ivorfall" element={<Ivorfall/>}/>
-          <Route path="goom" element={<Goom/>}/>
+          <Route path=":project" element={<Project/>} errorElement={<Home/>}/>
         </Route>
 
         <Route path="*" element={<Home/>}/>

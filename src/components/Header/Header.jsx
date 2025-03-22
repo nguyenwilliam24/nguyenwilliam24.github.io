@@ -13,7 +13,7 @@ const Header = () => {
         <h1>I'm <span>William Nguyen</span>, a gameplay programmer.</h1>
         <p>I enjoy designing and implementing gameplay mechanics and abilities.</p>
         <div className="header-action">
-            <div className="header-resume" onClick={()=>navigate("/resume")}>My Resume</div>
+            <div className="header-resume" onClick={()=>{navigate("/resume"); window.scrollTo(0,0)}}>My Resume</div>
         </div>
     </div>
   )
