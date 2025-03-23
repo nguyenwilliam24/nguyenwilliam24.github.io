@@ -1,6 +1,61 @@
+@import url("react-image-gallery/styles/css/image-gallery.css");
+
 .page-layout{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     gap: 35px;
+}
+
+.page-layout p{
+    width: 75%;
+    font-size: 22px;
+}
+
+.page-layout h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.page-layout h2{
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.page-title{
+    position: relative;
+}
+
+.page-title h1{
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+.external-link{
+    text-decoration: none;
+    color: var(--text_color);
+    font-size: 32px;
+    font-weight: 1000;
+    transition: 0.25s;
+}
+
+.external-link:hover{
+    text-decoration: underline;
+    color: var(--main_color);
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+@media(max-width:768px)
+{
+    .page-layout p{
+        font-size: 18px;
+        width: 66.6%;
+    }
+
+    .page-title h1{
+        font-size: 32px;
+    }
 }

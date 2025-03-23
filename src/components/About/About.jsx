@@ -18,12 +18,12 @@ const About = () => {
                     <p>I am extremely proud of all the projects I have been a part of and the diverse group of people I had the opportunity to work with during my academic career. I look forward to creating even more memorable moments with new colleagues and connecting through our shared passion for games.</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>C++</p><hr style={{width:"75%"}}/></div>
-                    <div className="about-skill"><p>C#</p><hr style={{width:"70%"}}/></div>
-                    <div className="about-skill"><p>Python</p><hr style={{width:"65%"}}/></div>
-                    <div className="about-skill"><p>Unreal Engine</p><hr style={{width:"80%"}}/></div>
-                    <div className="about-skill"><p>Perforce</p><hr style={{width:"67.5%"}}/></div>
-                    <div className="about-skill"><p>Git</p><hr style={{width:"65%"}}/></div>
+                    <div className="about-skill"><p>C++</p><hr style={{width:"85%"}}/></div>
+                    <div className="about-skill"><p>C#</p><hr style={{width:"80%"}}/></div>
+                    <div className="about-skill"><p>Python</p><hr style={{width:"75%"}}/></div>
+                    <div className="about-skill"><p>Unreal Engine</p><hr style={{width:"85%"}}/></div>
+                    <div className="about-skill"><p>Perforce</p><hr style={{width:"75%"}}/></div>
+                    <div className="about-skill"><p>Git</p><hr style={{width:"75%"}}/></div>
                 </div>
             </div>
         </div>
