@@ -17,8 +17,13 @@ const Ivorfall = () => {
 
       <p>
         Ivorfall is a EAE Capstone project at the University of Utah for the year 2023-2024.
+      </p>
+      <p>
         Ivorfall is a isometric twinstick roguelike shooter where you play as a trigger happy detective trying to solve a mystery set in a steampunk city.
         The gameplay is inspired by games like Hades, RUINER, and Doom.
+      </p>
+
+      <p>
         The prototype that was made in 2 weeks with a team of 13 in order to demonstrate the capabilities of both the team and prove the game's concept to the professors and an industry panel.
         This was 1 of 16 prototypes where only 8 of them would be greenlit for full production for the rest of the school year.
         Upon being greenlit for begin full production, the team's size doubled to 26.
@@ -28,7 +33,7 @@ const Ivorfall = () => {
         I loved my time on Ivorfall, particularly working on the Weapon Modification System.
         This system was central to the gameplay experience in Ivorfall.
         Players constantly picked up different modifications, making it a key part of the gameplay loop.
-        Designers had a greate time creating fun and unique combinations that made players feel powerful sometimes too powerful.
+        Designers had a great time creating fun and unique combinations that made players feel powerful sometimes too powerful.
         The full school year of development allowed me and the team to refine and polish both the gameplay mechanics and the underlying implementation.
         The prototype for the system was assembled and functional, but wasn't ready for further expansion at that stage.
       </p>
@@ -40,6 +45,9 @@ const Ivorfall = () => {
         However, during the first few playtests, players felt like the modifications (mods) were too tedious to pick up and lacked impact.
         Design and Programming got together to discuss redesigning the system to provide a better sense of power for the player.
         We ultimately decided to go with a two-mod class design: Primary and Secondary.
+      </p>
+
+      <p>
         A Primary class mod function like a barrel modification, permanently altering how the weapon fired.
         A Secondary class mod would be more akin to ammo/bullets, such as oil pellets, electricity, and rockets.
         Implementing this design was relatively straightforward due to the separation.
@@ -48,12 +56,12 @@ const Ivorfall = () => {
       </p>
 
       <p>
-        We had biweekly playtests with the rest of the Capstone class for the school year, during which we received continous feedback on the game.
+        We had biweekly playtests with the rest of the Capstone class for the school year, during which we received continuous feedback on the game.
         Based on this feedback and footage of players interacting with the game, it became clear that the mods still lacked impact.
         Players weren't immediately drawn to the mods, as they seemed to be a nice addition rather than a necessity.
         The team wanted mods to feel more powerful and sometimes a must have.
         Design proposed an idea: what if each unique pairing of a Primary and Secondary mod gave the weapon an entirely different behavior?
-        This approach was eventaully adopted and shipped with the game.
+        This approach was eventually adopted and shipped with the game.
         Primary Mods effectively became distinct weapon types, while Secondary Mods in combination with a Primary Mod, altered not only the projectile but also its firing mechanics and additional effects.
       </p>
 
@@ -70,7 +78,7 @@ const Ivorfall = () => {
         For example the flamethrower combination is sweeping the area where the fire is supposed to be on an interval for targets.
         If targets are found then raycasts are sent out to each target to ensure the player does not applying damage through walls.
         The oil artillery shot is spawning a projectile that follows a parabolic trajectory and upon impact activates a sphere used for collisions waiting for overlap events.
-        Upon receiving an overlap event it will apply a slowing damage effect to the target for as long as it is overlaping the oil.
+        Upon receiving an overlap event it will apply a slowing damage effect to the target for as long as it is overlapping the oil.
         As a Lead on the project, I was the main programmer responsible for implementing the mods system above.
         I also taught other programmers and designers on how to use the system and create new combinations.
       </p>
@@ -90,12 +98,15 @@ const Ivorfall = () => {
         Before this system was created combat in the game was a free for all. As soon as any enemy got close they would start attacking.
         This proved to be challenging for the player and they would become easily overwhelmed as more enemies spawned in.
         We wanted to have ways to tune the combat and have it be more manageable without having to spawn less enemies because we liked the horde aspects that we had.
-        I started looking at other games espically very combat/enemy heavy focused games. Games like: Spider-Man, God of War, Devil May Cry, Vampire Survivors, Hollow Knight, and list goes on for awhile.
+      </p>
+
+      <p>
+        I started looking at other games especially very combat/enemy heavy focused games. Games like: Spider-Man, God of War, Devil May Cry, Vampire Survivors, Hollow Knight, and list goes on for awhile.
         During my research, I came across two very useful GDC talks from the teams at Insomniac Games and Sony Santa Monica.
         In both of these talks they went into depth about the Combat Systems and their process doing what they did in Spider-Man (2018) and God of War (2018).
         In the Insomniac talk the presenter showcased a clip of their Combat Manager turned off, and it was exactly like how Ivorfall was currently playing out.
         Just chaos and no flow even for a superhero character like Spider-Man which isn't what happens in the real game.
-        I showed this clip to the other programmers on my team and they felt like a smiliar system was doable for our game.
+        I showed this clip to the other programmers on my team and they felt like a simliar system was doable for our game.
         From here we needed to understand what is going on with the combat. I setup a meeting with programmers and designers to discuss the flow of combat.
         How fast did we want it? Do we want peaks and valleys or have it at a constant rate? 
         Understanding what were the requirements of the system and how could it be tunable down the road.
@@ -119,7 +130,7 @@ const Ivorfall = () => {
         The tokens needed to be in a global space where any enemy could attempt to access them. This is where an Unreal Subsystem became very useful that was dedicated to this.
         The initial token pool had to have a starting amount otherwise enemies would never attack
         I initially was thinking about implementing a token pool size that could change between levels but the team suggested I didn't do this.
-        As there weren't a lot of levels and we didn't want combat feeling different per level either. I opted for this to be setable from a config file and not hardcoded.
+        As there weren't a lot of levels and we didn't want combat feeling different per level either. I opted for this to be settable from a config file and not hardcoded.
       </p>
     </PageLayout>
   )
