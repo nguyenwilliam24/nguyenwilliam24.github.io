@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from "react-router-dom"
+import {Route, createHashRouter, createRoutesFromElements, RouterProvider} from "react-router-dom"
 import RootLayout from './layout/RootLayout'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
@@ -9,7 +9,7 @@ import Projects from './pages/Projects'
 import Project from './components/Project/Project'
 
 const App = () => {
-  const Router = createBrowserRouter(
+  const Router = createHashRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout/>}>
         <Route index path="" element={<Home/>}/>
